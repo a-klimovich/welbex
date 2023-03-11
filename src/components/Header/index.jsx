@@ -1,4 +1,4 @@
-import Social from '../shared/Social'
+import Social from '../Social'
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
 import styles from './styles.module.scss'
 
