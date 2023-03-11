@@ -18,6 +18,11 @@ h4 {
   line-height: 22px;
 }
 
+h5 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
 @for $i from 1 through 9 {
   $weight: #{$i * 100};
 

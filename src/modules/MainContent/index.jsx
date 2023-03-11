@@ -19,7 +19,7 @@ const MainContent = () => (
         size={4}
         weight={700}
       >
-        Вместе с {<Gradient>бесплатной <br /> консультацией</Gradient>} мы дарим:
+        Вместе с {<Gradient>БЕСПЛАТНОЙ <br /> КОНСУЛЬТАЦИЕЙ</Gradient>} мы дарим:
       </Title>
 
       <div className={styles.grid}>
@@ -47,6 +47,13 @@ const MainContent = () => (
           <Paragraph>CRM</Paragraph>
         </div>
       </div>
+
+      <button
+        type="button"
+        className={styles.button}
+      >
+        Получить консультацию
+      </button>
     </div>
   </div>
 )

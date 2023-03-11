@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .title {
+      color: var(--gray-dark);
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    .listBox {
+      display: grid;
+      
+      & > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    .column,
+    .columnContacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .columnContacts {
+      text-align: end;
+
+      .list {
+        gap: 20px;
+      }
+
+      .list .social ul {
+        max-width: 80px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 12px;
+    line-height: 15px;
+
+    span {
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+

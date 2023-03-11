@@ -7,6 +7,7 @@
   --white: #FFFFFF;
   --black: #0E1014;
   --gray: #E4E5EA;
+  --gray-dark: #656566;
   --orange: #FCB045;
   --brown: #961A1A;
   --red: #FF3F78;
@@ -46,4 +47,11 @@ main {
 
 footer {
   flex: 0 0 auto;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
