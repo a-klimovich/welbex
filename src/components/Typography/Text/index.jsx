@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
 
-export const Text = ({ children }) => (
-  <span className={styles.text}>{children}</span>
+export const Text = ({ children, className = "" }) => (
+  <span className={`${styles.text} ${className}`}>{children}</span>
 );
