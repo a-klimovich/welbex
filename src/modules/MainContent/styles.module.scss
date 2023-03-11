@@ -1,23 +1,32 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  place-items: center;
   width: 100%;
   padding: 90px 0 70px 0;
 
   .first {
     .titleBox {
       max-width: min-content;
+      margin-bottom: 30px;
     }
   }
 
   .second {
     text-align: end;
 
+    .secondTitle {
+      margin-bottom: 40px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
+      margin-bottom: 61px;
+    }
+
+    .titleGridItem {
+      margin-bottom: 6px;
     }
   }
 

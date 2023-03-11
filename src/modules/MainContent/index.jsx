@@ -11,38 +11,40 @@ const MainContent = () => (
         <Title weight={900}><Gradient>с WELBEX</Gradient></Title>
       </div>
 
-      <Paragraph>Развиваем и контролируем продажи за вас</Paragraph>
+      <Paragraph>Развиваем и контролируем</Paragraph>
+      <Paragraph>продажи за вас</Paragraph>
     </div>
 
     <div className={styles.second}>
       <Title
         size={4}
         weight={700}
+        className={styles.secondTitle}
       >
         Вместе с {<Gradient>БЕСПЛАТНОЙ <br /> КОНСУЛЬТАЦИЕЙ</Gradient>} мы дарим:
       </Title>
 
       <div className={styles.grid}>
         <div>
-          <Title size={4} weight={700}>Виджеты</Title>
+          <Title size={4} weight={700} className={styles.titleGridItem}>Виджеты</Title>
           <Paragraph>30 готовых</Paragraph>
           <Paragraph>решений</Paragraph>
         </div>
 
         <div>
-          <Title size={4} weight={700}>Dashboard</Title>
+          <Title size={4} weight={700} className={styles.titleGridItem}>Dashboard</Title>
           <Paragraph>с показателями</Paragraph>
           <Paragraph>вашего бизнеса</Paragraph>
         </div>
 
         <div>
-          <Title size={4} weight={700}>Skype Аудит</Title>
+          <Title size={4} weight={700} className={styles.titleGridItem}>Skype Аудит</Title>
           <Paragraph>отдела продаж</Paragraph>
           <Paragraph>и CRM системы</Paragraph>
         </div>
 
         <div>
-          <Title size={4} weight={700}>35 дней</Title>
+          <Title size={4} weight={700} className={styles.titleGridItem}>35 дней</Title>
           <Paragraph>использования</Paragraph>
           <Paragraph>CRM</Paragraph>
         </div>
