@@ -6,9 +6,11 @@ _created on Vite_
 **use Yarn to start 👇**
 
 > yarn
+
 > yarn dev
 
 > yarn run build
+
 > yarn run preview
 
 

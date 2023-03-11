@@ -1,0 +1,27 @@
+h1,h2,h3,h4,h5,
+.h1,.h2,.h3,.h4,.h5 {
+  font-family: 'Inter', sans-serif;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@for $i from 1 through 9 {
+  $weight: #{$i * 100};
+
+  .weight--#{$weight} {
+    font-weight: $weight;
+  }
+}
