@@ -24,6 +24,12 @@ body {
   background-color: var(--black);
   color: var(--gray);
   font-size: var(--default-font-size);
+
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App {
