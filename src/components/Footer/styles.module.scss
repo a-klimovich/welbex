@@ -1,37 +1,48 @@
+$gray-dark: var(--gray-dark);
+$gap-default: 10px;
+
 .footer {
   display: flex;
   flex-direction: column;
 
   .top {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 30px;
 
     .title {
-      color: var(--gray-dark);
+      color: $gray-dark;
       margin-bottom: 20px;
       letter-spacing: 0.05em;
     }
 
     .listBox {
       display: grid;
+      margin-right: auto;
       
       & > div {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
     }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-default;
+    }
+
+    .about {
+      margin-right: clamp(5%, 25vw, 100px);
+    }
   
     .column,
     .columnContacts {
       display: flex;
       flex-direction: column;
-    }
 
-    .list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      a {
+        letter-spacing: -0.8px;
+      }
     }
   
     .columnContacts {
@@ -65,4 +76,3 @@
     }
   }
 }
-

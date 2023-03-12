@@ -1,4 +1,5 @@
 import Social from '../Social'
+import { PhoneLink } from '../shared/PhoneLink'
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
 import styles from './styles.module.scss'
 
@@ -17,9 +18,8 @@ const Header = () => (
       <a href="">Сертификаты</a>
     </nav>
 
-    <a href="tel:+75555555555" className={styles.phone}>+7 555 555-55-55</a>
+    <PhoneLink className={styles.phone} />
 
-    
     <div className={styles.socialWrapper}>
       <Social />
     </div>

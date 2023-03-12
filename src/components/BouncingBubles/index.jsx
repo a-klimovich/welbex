@@ -9,10 +9,13 @@ const BouncingBalls = () => {
     const createBall = () => {
       const newBall = {
         id: balls.length + 1,
-        left: Math.floor(Math.random() * (window.innerWidth - 50)),
-        top: Math.floor(Math.random() * (window.innerHeight - 50)),
+        startLeft: Math.floor(Math.random() * (window.innerWidth - 50)),
+        startTop: Math.floor(Math.random() * (window.innerHeight - 50)),
+        endLeft: Math.floor(Math.random() * (window.innerWidth - 50)),
+        endTop: Math.floor(Math.random() * (window.innerHeight - 50)),
         xSpeed: Math.floor(Math.random() * 10) + 1,
         ySpeed: Math.floor(Math.random() * 10) + 1,
+        isMovingToEnd: true,
       };
       setBalls(balls => [...balls, newBall]);
     };
@@ -29,15 +32,36 @@ const BouncingBalls = () => {
   useEffect(() => {
     const moveBalls = () => {
       setBalls(balls =>
-        balls.map(ball => ({
-          ...ball,
-          left: ball.left + ball.xSpeed,
-          top: ball.top + ball.ySpeed,
-          xSpeed: ball.left + ball.xSpeed > window.innerWidth - 50 || ball.left + ball.xSpeed < 0 ? -ball.xSpeed : ball.xSpeed,
-          ySpeed: ball.top + ball.ySpeed > window.innerHeight - 50 || ball.top + ball.ySpeed < 0 ? -ball.ySpeed : ball.ySpeed,
-        }))
+        balls.map(ball => {
+          const { startLeft, startTop, endLeft, endTop, xSpeed, ySpeed, isMovingToEnd } = ball;
+          let newLeft, newTop, newXSpeed, newYSpeed, newIsMovingToEnd;
+    
+          if (isMovingToEnd) {
+            newLeft = ball.left + xSpeed;
+            newTop = ball.top + ySpeed;
+            newXSpeed = newLeft > endLeft || newLeft < startLeft ? -xSpeed : xSpeed;
+            newYSpeed = newTop > endTop || newTop < startTop ? -ySpeed : ySpeed;
+            newIsMovingToEnd = newLeft > endLeft && newTop > endTop;
+          } else {
+            newLeft = ball.left - xSpeed;
+            newTop = ball.top - ySpeed;
+            newXSpeed = newLeft > endLeft || newLeft < startLeft ? -xSpeed : xSpeed;
+            newYSpeed = newTop > endTop || newTop < startTop ? -ySpeed : ySpeed;
+            newIsMovingToEnd = newLeft < startLeft && newTop < startTop;
+          }
+    
+          return {
+            ...ball,
+            left: newLeft,
+            top: newTop,
+            xSpeed: newXSpeed,
+            ySpeed: newYSpeed,
+            isMovingToEnd: newIsMovingToEnd,
+          };
+        })
       );
     };
+    
 
     const interval = setInterval(() => {
       moveBalls();

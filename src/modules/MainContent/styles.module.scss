@@ -2,20 +2,34 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 90px 0 70px 0;
+  padding: 86px 0 70px 0;
 
   .first {
-    .titleBox {
+    .title {
       max-width: min-content;
       margin-bottom: 30px;
+    }
+
+    .subtitle {
+      letter-spacing: 1.2px;
+
+      p {
+        line-height: 22px;
+      }
     }
   }
 
   .second {
+    padding-top: 16px;
     text-align: end;
 
     .secondTitle {
+      letter-spacing: 0.8px;
       margin-bottom: 40px;
+
+      .fixLetterSpace {
+        letter-spacing: -0.4px;
+      }
     }
 
     .grid {
@@ -27,11 +41,12 @@
 
     .titleGridItem {
       margin-bottom: 6px;
+      letter-spacing: 0.4px;
     }
   }
 
   .button {
-    padding: 20px;
+    padding: 20px 34px;
     color: var(--white);
     background-color: var(--blue);
   }
