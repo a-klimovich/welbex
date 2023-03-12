@@ -17,11 +17,11 @@ const App = () => (
 
       <Footer />
 
-      <Buble size="311px" variant="redLight" top="251px" left="-102px" />
-      <Buble size="83px" variant="redBoll" top="83px" left="519px" />
-      <Buble size="259px" variant="purpleLight" top="-154px" left="602px" />
-      <Buble size="60px" variant="purpleBall" top="-2px" left="868px" />
-      <Buble size="28px" variant="redBoll" top="547px" left="851px" />
+      <Buble size="calc(var(--index-size) * 31.8)" variant="redLight" top="25%" left="-5%" />
+      <Buble size="83px" variant="redBoll" top="83px" left="41.2%" />
+      <Buble size="calc(var(--index-size) * 27)" variant="purpleLight" top="-15%" left="45%" />
+      <Buble size="60px" variant="purpleBall" top="0.2%" left="60%" />
+      <Buble size="28px" variant="redBoll" top="58.6%" left="59.5%" />
     </div>
   </Container>
 )

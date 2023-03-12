@@ -4,6 +4,12 @@
   width: 100%;
   padding: 86px 0 70px 0;
 
+  @media screen and (max-width: 768px) {
+    display: grid;
+    justify-content: center;
+    gap: 45px;
+  }
+
   .first {
     .title {
       max-width: min-content;
@@ -23,9 +29,17 @@
     padding-top: 16px;
     text-align: end;
 
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+
     .secondTitle {
       letter-spacing: 0.8px;
       margin-bottom: 40px;
+      
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
 
       .fixLetterSpace {
         letter-spacing: -0.4px;
@@ -37,6 +51,31 @@
       grid-template-columns: 1fr 1fr;
       gap: 30px;
       margin-bottom: 61px;
+
+      @media screen and (max-width: 768px) {
+        div > h4 {
+          position: relative;
+          padding-left: 15px;
+          margin-bottom: 0;
+          display: block;
+          font-weight: 400;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 2px;
+            background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+          }
+        }
+
+        p {
+          display: none;
+        }
+      }
     }
 
     .titleGridItem {
@@ -49,6 +88,10 @@
     padding: 20px 34px;
     color: var(--white);
     background-color: var(--blue);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 

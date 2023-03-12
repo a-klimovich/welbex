@@ -9,6 +9,10 @@ $gap-default: 10px;
     display: flex;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
     .title {
       color: $gray-dark;
       margin-bottom: 20px;
@@ -48,6 +52,10 @@ $gap-default: 10px;
     .columnContacts {
       text-align: end;
 
+      @media screen and (max-width: 768px) {
+        text-align: left;
+      }
+
       .list {
         gap: 20px;
       }
@@ -55,6 +63,17 @@ $gap-default: 10px;
       .list .social ul {
         max-width: 80px;
         margin-left: auto;
+
+        @media screen and (max-width: 768px) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .listBox,
+      .column {
+        margin-bottom: 30px;
       }
     }
   }

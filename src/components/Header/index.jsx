@@ -1,12 +1,14 @@
 import Social from '../Social'
 import { PhoneLink } from '../shared/PhoneLink'
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
+import { ReactComponent as LogoIcon } from '../../assets/svg/logo_icon.svg'
+import { ReactComponent as LogoText } from '../../assets/svg/logo_text.svg'
 import styles from './styles.module.scss'
 
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.logoWrapper}>
-      <Logo />
+      <LogoIcon className={styles.logoIcon}/>
+      <LogoText className={styles.logoText}/>
       <span>крупный интегратор CRM в Росcии и ещё 8 странах</span>
     </div>
 
