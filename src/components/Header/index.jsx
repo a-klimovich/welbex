@@ -1,6 +1,6 @@
 import Social from '../Social'
 import ScrollableArea from '../ScrollableArea'
-import Container from '../Container'
+import Container from '../shared/Container'
 import { PhoneLink } from '../shared/PhoneLink'
 import { ReactComponent as LogoIcon } from '../../assets/svg/logo_icon.svg'
 import { ReactComponent as LogoText } from '../../assets/svg/logo_text.svg'

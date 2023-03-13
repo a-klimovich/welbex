@@ -1,6 +1,6 @@
 import Typography from '../Typography';
 import Social from '../Social';
-import Container from '../Container';
+import Container from '../shared/Container';
 import { PhoneLink } from '../shared/PhoneLink'
 import styles from './styles.module.scss';
 
