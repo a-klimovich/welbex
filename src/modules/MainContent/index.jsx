@@ -72,49 +72,6 @@ const MainContent = () => (
     </div>
 
     <Bubles />
-
-    {/* <Buble
-      variant="redBoll"
-      size="83px"
-      top="83px"
-      left="41.2%"
-      mobile={{
-        top: "402px",
-        left: "29px",
-        size: "43px",
-      }}
-    />
-
-    <Buble
-      size="calc(var(--index-size) * 27)" 
-      variant="purpleLight" 
-      top="-15%" 
-      left="45%"
-      mobile={{
-        top: "107px",
-        left: "258px",
-        size: "259px",
-      }}
-    />
-
-    <Buble 
-      size="60px"
-      variant="purpleBall" 
-      top="0.2%" 
-      left="60%"
-      mobile={{
-        top: "236px",
-        left: "296px",
-        size: "40px",
-      }}
-    />
-
-    <Buble
-      size="28px"
-      variant="redBoll"
-      top="58.6%" 
-      left="59.5%"
-    /> */}
   </>
 )
 
