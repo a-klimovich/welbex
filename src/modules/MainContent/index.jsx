@@ -19,7 +19,7 @@ const MainContent = () => (
 
     <div className={styles.second}>
       <Title
-        size={4}
+        size={2}
         weight={700}
         className={styles.secondTitle}
       >

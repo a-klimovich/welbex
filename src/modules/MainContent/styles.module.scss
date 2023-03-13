@@ -54,6 +54,8 @@
       margin-bottom: 61px;
 
       @media screen and (max-width: 768px) {
+        margin-bottom: 55px;
+        gap: 14px 10px;
         div > h4 {
           position: relative;
           padding-left: 15px;
