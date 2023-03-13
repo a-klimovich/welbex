@@ -3,6 +3,23 @@
   justify-content: space-between;
   width: 100%;
   padding: 86px 0 70px 0;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    $containerPadding: 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -$containerPadding;
+      right: -$containerPadding;
+      bottom: 0;
+      background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      backdrop-filter: blur(7.5px);
+    }
+  }
 
   @media screen and (max-width: 768px) {
     display: grid;
@@ -31,6 +48,7 @@
     text-align: end;
 
     @media screen and (max-width: 768px) {
+      padding-top: 0;
       text-align: left;
     }
 
