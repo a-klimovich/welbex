@@ -2,11 +2,9 @@ $gray-dark: var(--gray-dark);
 $gap-default: 10px;
 
 .footer {
-  display: flex;
-  flex-direction: column;
-
   @media screen and (max-width: 768px) {
     background-color: var(--black);
+    padding-top: 40px;
   }
 
   .top {

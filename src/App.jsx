@@ -5,17 +5,17 @@ import MainContent from './modules/MainContent'
 import './scss/index.scss'
 
 const App = () => (
-  <Container>
-    <div className="App">
-      <Header />
+  <div className="App">
+    <Header />
 
-      <main>
+    <main>
+      <Container>
         <MainContent />
-      </main>
+      </Container>
+    </main>
 
-      <Footer />
-    </div>
-  </Container>
+    <Footer />
+  </div>
 )
 
 export default App
